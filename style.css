@@ -1,91 +1,98 @@
-/* Neon Glow Resume Theme */
+/* Base styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    background: #0f0f0f;
-    color: #e0e0e0;
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background: linear-gradient(to right, #e0c3fc, #8ec5fc);
+  color: #333;
+  padding: 20px;
 }
 
-div > div {
-    max-width: 1000px;
-    margin: 40px auto;
-    background: linear-gradient(135deg, #1a1a1a, #2c003e);
-    padding: 40px;
-    border-radius: 20px;
-    box-shadow: 0 0 40px rgba(255, 0, 255, 0.4);
-    transition: all 0.3s ease-in-out;
+.container {
+  max-width: 900px;
+  margin: auto;
+  background: #ffffffdd;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
 }
-div > div:hover {
-    box-shadow: 0 0 60px rgba(0, 255, 255, 0.6);
-    transform: scale(1.01);
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #4b0082;
+}
+
+header a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+/* Sections */
+section {
+  margin-bottom: 30px;
 }
 
 h2 {
-    font-size: 2rem;
-    border-bottom: 3px solid #ff00ff;
-    padding-bottom: 8px;
-    color: #00ffff;
-    text-shadow: 0 0 8px #00ffff;
-    margin-bottom: 20px;
-}
-
-table {
-    width: 100%;
-}
-td {
-    vertical-align: top;
-    padding-right: 20px;
-}
-img {
-    border-radius: 50%;
-    border: 4px solid #00ffff;
-    box-shadow: 0 0 20px #00ffff;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-img:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 30px #ff00ff;
-}
-
-a {
-    color: #ff00ff;
-    text-decoration: none;
-    font-weight: 600;
-    text-shadow: 0 0 5px #ff00ff;
-}
-a:hover {
-    color: #00ffff;
-    text-shadow: 0 0 8px #00ffff;
+  color: #800080;
+  margin-bottom: 10px;
 }
 
 ul {
-    list-style: square;
-    padding-left: 20px;
-}
-ul li {
-    padding: 6px 0;
-    font-size: 1.1rem;
+  padding-left: 20px;
 }
 
+li {
+  margin-bottom: 5px;
+}
+
+/* Profile Image */
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  float: left;
+  margin-right: 20px;
+  border: 4px solid #800080;
+}
+
+/* Footer */
 footer {
-    text-align: center;
-    padding: 25px;
-    font-size: 0.9rem;
-    color: #ccc;
-    border-top: 2px dashed #ff00ff;
-    margin-top: 40px;
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 10px;
+  font-size: 0.9rem;
+  border-top: 1px solid #ccc;
 }
 
-@media (max-width: 768px) {
-    td {
-        display: block;
-        width: 100%;
-        text-align: center;
-        padding: 0;
-    }
-    img {
-        margin-bottom: 20px;
-    }
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+  .profile-img {
+    float: none;
+    display: block;
+    margin: 0 auto 15px;
+  }
+
+  body {
+    padding: 10px;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .container {
+    padding: 15px;
+  }
 }
