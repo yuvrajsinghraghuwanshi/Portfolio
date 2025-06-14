@@ -115,7 +115,7 @@ footer {
         font-size: 0.95rem;
     }
 }
-
+/* Highlight table rows and list items on hover */
 td:hover, ul li:hover {
     background-color: rgba(255, 0, 255, 0.05);
     color: #00ffff;
@@ -149,3 +149,46 @@ a:hover {
     color: #00ffff;
     text-shadow: 0 0 12px #00ffff;
 }
+/* Desktop: default table layout (side by side) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  td {
+    vertical-align: top;
+    padding-right: 20px;
+  }
+  
+  /* Responsive mobile: stack image and text */
+  @media (max-width: 768px) {
+    table, tr, td {
+      display: block;
+      width: 100%;
+      padding: 0;
+      text-align: center;
+    }
+  
+    td:first-child {
+      margin-bottom: 15px; /* space between image and text */
+    }
+  
+    img {
+      max-width: 150px; /* adjust image size for mobile */
+      height: auto;
+      border-radius: 50%;
+      border: 4px solid #00ffff;
+      box-shadow: 0 0 20px #00ffff;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+  }
+  @media (max-width: 768px) {
+    /* existing styles... */
+  
+    td:last-child p {
+      max-width: 320px;    /* adjust width as you like */
+      margin: 0 auto;      /* center paragraph */
+      text-align: left;    /* optional: keep left-aligned text */
+    }
+  }
+    
