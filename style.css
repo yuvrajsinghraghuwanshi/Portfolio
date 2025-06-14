@@ -1,4 +1,121 @@
-/* Highlight table rows and list items on hover */
+/* Neon Glow Resume Theme - Mobile Optimized */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #0f0f0f;
+    color: #e0e0e0;
+}
+
+div > div {
+    max-width: 1000px;
+    margin: 40px auto;
+    background: linear-gradient(135deg, #1a1a1a, #2c003e);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 40px rgba(255, 0, 255, 0.4);
+    transition: all 0.3s ease-in-out;
+}
+div > div:hover {
+    box-shadow: 0 0 60px rgba(0, 255, 255, 0.6);
+    transform: scale(1.01);
+}
+
+h2 {
+    font-size: 2rem;
+    border-bottom: 3px solid #ff00ff;
+    padding-bottom: 8px;
+    color: #00ffff;
+    text-shadow: 0 0 8px #00ffff;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+td {
+    vertical-align: top;
+    padding-right: 20px;
+}
+img {
+    border-radius: 50%;
+    border: 4px solid #00ffff;
+    box-shadow: 0 0 20px #00ffff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 150px;
+    height: auto;
+}
+img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px #ff00ff;
+}
+
+a {
+    color: #ff00ff;
+    text-decoration: none;
+    font-weight: 600;
+    text-shadow: 0 0 5px #ff00ff;
+}
+a:hover {
+    color: #00ffff;
+    text-shadow: 0 0 8px #00ffff;
+}
+
+ul {
+    list-style: square;
+    padding-left: 20px;
+}
+ul li {
+    padding: 6px 0;
+    font-size: 1.1rem;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    font-size: 0.9rem;
+    color: #ccc;
+    border-top: 2px dashed #ff00ff;
+    margin-top: 40px;
+}
+
+/* 🔥 Responsive Mobile View */
+@media (max-width: 768px) {
+    div > div {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    table, tr, td {
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+
+    td {
+        text-align: center;
+    }
+
+    img {
+        max-width: 120px;
+        margin: 10px auto;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    ul li {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.95rem;
+    }
+}
+
 td:hover, ul li:hover {
     background-color: rgba(255, 0, 255, 0.05);
     color: #00ffff;
