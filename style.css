@@ -1,34 +1,27 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   font-family: 'Segoe UI', sans-serif;
-  line-height: 1.6;
-  background: linear-gradient(to right, #e0f7fa, #ffffff);
-  color: #333;
-  padding: 20px;
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  color: #ffffff;
+  margin: 0;
+  padding: 0 15px;
 }
 
 .container {
-  max-width: 1000px;
-  margin: auto;
-  background-color: white;
-  border-radius: 10px;
+  max-width: 900px;
+  margin: 40px auto;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 15px;
   padding: 30px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 25px #00f2ff;
 }
 
-header h1 {
-  font-size: 2.5rem;
-  color: #0077cc;
-  margin-bottom: 10px;
+h1, h2 {
+  text-shadow: 0 0 10px #00f2ff;
+  color: #00f2ff;
 }
 
 a {
-  color: #0077cc;
+  color: #39ff14;
   text-decoration: none;
 }
 a:hover {
@@ -44,20 +37,15 @@ a:hover {
 }
 
 .intro img {
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
   object-fit: cover;
   border-radius: 50%;
+  box-shadow: 0 0 15px #00f2ff;
 }
 
 section {
   margin-top: 30px;
-}
-
-section h2 {
-  color: #ff5722;
-  margin-bottom: 10px;
-  font-size: 1.8rem;
 }
 
 ul {
@@ -69,9 +57,9 @@ footer {
   text-align: center;
   padding: 20px;
   margin-top: 40px;
-  color: #fff;
-  background: linear-gradient(to right, #00c6ff, #0072ff);
+  background: linear-gradient(to right, #00f2ff, #39ff14);
   border-radius: 8px;
+  color: #000;
   font-weight: bold;
 }
 
@@ -82,7 +70,19 @@ footer {
   }
 
   .intro img {
-    width: 120px;
-    height: 120px;
+    width: 90px;
+    height: 90px;
+  }
+
+  .container {
+    padding: 20px 15px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
   }
 }
