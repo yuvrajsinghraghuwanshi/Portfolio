@@ -1,79 +1,129 @@
+<!DOCTYPE html>
 <html>
-    <head>
+<head>
+    <title>Yuvraj Singh Raghuwanshi | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 
-    </head>
-    <body> 
-        <link rel="stylesheet" href="style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
 
-        <div>
-            <div>
-                <h2>Yuvraj Singh Raghuwanshi</h2>
-                <p>Email: <a href="mailto:yuvrajraghuwanshi1212@gmail.com">yuvrajraghuwanshi1212@gmail.com</a></p>
-                <p>Linkedin: <a href="https://www.linkedin.com/in/yuvraj-singh-raghuwanshi-8bb936311/">Yuvraj Singh Raghuwanshi</a></p>
+<body>
 
-               <table cellspacing="20"; cellpadding="1">
-                <tr>
-                    <td>
-                        <img src="IMG_3428.png " height="100px">
-                    </td>
-                    <td>
-                        <p>Hi, I’m Yuvraj Singh Raghuwanshi
-I’m a Computer Science Engineering student at IIIT Kota, driven by a passion for technology and continuous learning.
-Currently, I’m exploring full-stack web development, building responsive and dynamic interfaces using HTML, CSS, JavaScript, and React, and learning to create robust backends with Node.js and MySQL.
-Alongside, I’m strengthening my fundamentals in C and C++, and actively sharpening my Data Structures and Algorithms (DSA) skills — I’ve mastered concepts up to Binary Search Trees, including linked lists, stacks, queues, and binary search.
-I love writing clean, efficient, and maintainable code, and enjoy solving challenging problems that help me grow as a developer.
-My next goals are to build full-stack mini-projects, get hands-on with Git/GitHub, and explore DevOps workflows to understand deployment and scalability.
-💡 Welcome to my digital portfolio!</p>
-                    </td>
-                </tr>
-               </table>
-               <div>
-                <h2>Education</h2>
-                <ul>
-                    <li>Bachelor of Technology in Computer Science and Engineering, Indian Instite of Information Technology Kota</li>
-                    <li>Kolaras Public School, Shivpuri</li>
-                </ul>
-               </div>
-               <div>
-                <h2>
-                Skills
-                </h2>
-                <ul>
-                    <li>C</li>
-                    <li>C++</li>
-                    <li>Python</li>
-                    <li>Numpy</li>
-                    <li>Pandas</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>Node.Js</li>
-                    <li>MySql</li>
-                    
-                </ul>
-               </div>
-               <div>
-                <h2> Achievements</h2>
-                <ul>
-                    <li>Qualified Jee Advanced in First Attempt</li>
-                    <li>Was in top 2% scorers in JEE Main</li>
-                </ul>
-               </div>
-                <div>
-                    <h2> Social Profiles</h2>
-                    <ul>
-                        <li><a href="https://leetcode.com/u/yuvrajraghuwanshi"> Leetcode </a></li>
-                        <li><a href="https://www.linkedin.com/in/yuvraj-singh-raghuwanshi-8bb936311">LinkedIn</a></li>
-                        <li><a href="https://www.instagram.com/iyuvrajraghuwanshi">Instagram</a></li>
-                        <li><a href="https://www.codechef.com/users/yuvrajraghu1c">CodeChef</a></li>
-                    </ul>
-                    </div>
-               <footer>
-                © 2025 Yuvraj Singh Raghuwanshi. All rights reserved.
+<nav class="navbar">
+    <h2 class="logo">Yuvraj</h2>
+    <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
 
-               </footer>
+    <button class="dark-toggle" onclick="toggleDarkMode()">
+        <i data-feather="moon"></i>
+    </button>
+</nav>
+
+
+<section id="hero" class="hero-section reveal">
+    <div class="hero-text">
+        <h1>Hi, I'm <span>Yuvraj Singh</span></h1>
+        <p>A passionate <strong>Full-Stack Developer</strong> & CSE student at IIIT Kota.</p>
+        <a href="#projects" class="hero-btn">View Projects</a>
+    </div>
+    <img src="IMG_3428.png" class="hero-img" />
+</section>
+
+
+<div class="container">
+
+
+    <section id="projects" class="section reveal">
+        <h2>Projects</h2>
+
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>TravelEase</h3>
+                <p>A travel registration system with Razorpay payments & MySQL backend.</p>
+                <a href="#" class="card-btn">View</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Portfolio Website</h3>
+                <p>A modern and responsive personal portfolio with animations.</p>
+                <a href="#" class="card-btn">View</a>
             </div>
         </div>
-    </body>
+    </section>
+
+
+    <section id="skills" class="section reveal">
+        <h2>Skills</h2>
+        <ul class="skills-grid">
+            <li>C</li><li>C++</li><li>Python</li><li>HTML</li><li>CSS</li>
+            <li>JavaScript</li><li>Node.js</li><li>MySQL</li><li>Pandas</li><li>Numpy</li>
+        </ul>
+    </section>
+
+
+    <section id="education" class="section reveal">
+        <h2>Education</h2>
+        <ul>
+            <li><strong>B.Tech CSE</strong> — IIIT Kota</li>
+            <li><strong>Schooling</strong> — Kolaras Public School, Shivpuri</li>
+        </ul>
+    </section>
+
+
+    <section id="contact" class="section reveal">
+        <h2>Contact</h2>
+        
+        <p>Email: 
+            <a href="mailto:yuvrajraghuwanshi1212@gmail.com">
+                yuvrajraghuwanshi1212@gmail.com
+            </a>
+        </p>
+
+        <div class="social-links">
+
+            <a href="https://www.linkedin.com/in/yuvraj-singh-raghuwanshi-8bb936311/" target="_blank">
+                <i data-feather="linkedin"></i>
+            </a>
+
+            <a href="https://leetcode.com/u/yuvrajraghuwanshi/" target="_blank">
+                <img src="https://assets.leetcode.com/static_assets/public/icons/favicon-32x32.png" class="icon-img">
+            </a>
+
+            <a href="https://www.codechef.com/users/yuvrajraghu1c" target="_blank">
+                <img src="https://cdn.codechef.com/misc/favicons/favicon-96x96.png" class="icon-img">
+            </a>
+
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    © 2025 Yuvraj Singh Raghuwanshi. All rights reserved.
+</footer>
+
+<script>
+    feather.replace();
+
+    function toggleDarkMode() {
+        document.body.classList.toggle("dark");
+    }
+
+    const reveals = document.querySelectorAll('.reveal');
+    window.addEventListener('scroll', () => {
+        reveals.forEach((el) => {
+            if (el.getBoundingClientRect().top < window.innerHeight - 100) {
+                el.classList.add('active');
+            }
+        });
+    });
+</script>
+
+</body>
 </html>
